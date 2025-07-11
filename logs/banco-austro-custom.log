@@ -1,0 +1,4 @@
+2025-07-10 22:15:11,745 INFO  [io.quarkus] (Quarkus Main Thread) bancoaustro 1.0-SNAPSHOT on JVM (powered by Quarkus 3.24.3) started in 3.068s. Listening on: http://localhost:15050
+2025-07-10 22:15:11,750 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-07-10 22:15:11,751 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, rest, rest-client, rest-client-jackson, rest-jackson, rest-jsonb, smallrye-context-propagation, smallrye-fault-tolerance, vertx]
+2025-07-10 22:21:53,294 WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.

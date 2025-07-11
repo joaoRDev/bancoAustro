@@ -1,0 +1,43 @@
+2025-07-10 23:14:54,337 INFO  [io.quarkus] (Quarkus Main Thread) bancoaustro 1.0-SNAPSHOT on JVM (powered by Quarkus 3.15.1) started in 1.017s. Listening on: http://localhost:15050
+2025-07-10 23:14:54,343 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-07-10 23:14:54,344 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, rest, rest-client, rest-client-jackson, rest-jackson, scheduler, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-openapi, swagger-ui, vertx]
+2025-07-10 23:14:54,344 INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-1) Live reload total time: 1.090s 
+2025-07-10 23:14:54,348 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Host = [localhost:15050]
+2025-07-10 23:14:54,349 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Sec-Fetch-Site = [same-origin]
+2025-07-10 23:14:54,351 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: x-quarkus-hot-deployment-done = [true]
+2025-07-10 23:14:54,352 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: sec-ch-ua-mobile = [?0]
+2025-07-10 23:14:54,353 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Accept-Encoding = [gzip, deflate, br, zstd]
+2025-07-10 23:14:54,353 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Referer = [http://localhost:15050/q/swagger-ui/]
+2025-07-10 23:14:54,354 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Sec-Fetch-Dest = [empty]
+2025-07-10 23:14:54,355 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Connection = [keep-alive]
+2025-07-10 23:14:54,355 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: accept = [application/json]
+2025-07-10 23:14:54,355 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Accept-Language = [es-US,es-419;q=0.9,es;q=0.8]
+2025-07-10 23:14:54,357 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: sec-ch-ua = ["Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"]
+2025-07-10 23:14:54,358 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: User-Agent = [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36]
+2025-07-10 23:14:54,359 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: Sec-Fetch-Mode = [cors]
+2025-07-10 23:14:54,359 INFO  [com.ban.aus.res.PokemonResource] (executor-thread-1) Header propagated: sec-ch-ua-platform = ["Windows"]
+2025-07-10 23:14:54,361 INFO  [com.ban.aus.int.LoggingInterceptor] (executor-thread-1) [ENTRADA] PokemonService_Subclass.getMoves() - Parámetros: [strategy] - Timestamp: 2025-07-10T23:14:54.361432600
+2025-07-10 23:14:54,362 INFO  [com.ban.aus.int.LoggingInterceptor] (executor-thread-1) [ENTRADA] PokemonService_Subclass.getMoves() - Parámetros: [strategy, false] - Timestamp: 2025-07-10T23:14:54.362432300
+2025-07-10 23:14:57,290 ERROR [com.ban.aus.ser.PokemonService] (executor-thread-1) Error retrieving moves with strategy strategy: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:14:57,292 INFO  [com.ban.aus.int.LoggingInterceptor] (executor-thread-1) [SALIDA] PokemonService_Subclass.getMoves() - Resultado: com.banco.austro.service.ServiceResult@608073c - Tiempo: 2930ms - Timestamp: 2025-07-10T23:14:57.292402300
+2025-07-10 23:14:57,293 INFO  [com.ban.aus.int.LoggingInterceptor] (executor-thread-1) [SALIDA] PokemonService_Subclass.getMoves() - Resultado: com.banco.austro.service.ServiceResult@608073c - Tiempo: 2932ms - Timestamp: 2025-07-10T23:14:57.293397700
+2025-07-10 23:15:00,020 INFO  [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Ejecutando tarea periódica para obtener movimientos de Pokemon
+2025-07-10 23:15:00,021 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [ENTRADA] PokemonService_Subclass.getMoves() - Parámetros: [retry, true] - Timestamp: 2025-07-10T23:15:00.021595600
+2025-07-10 23:15:03,445 ERROR [com.ban.aus.ser.PokemonService] (vert.x-worker-thread-5) Error retrieving moves with retry strategy: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:15:03,445 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [SALIDA] PokemonService_Subclass.getMoves() - Resultado: com.banco.austro.service.ServiceResult@3b8e2225 - Tiempo: 3424ms - Timestamp: 2025-07-10T23:15:03.445988100
+2025-07-10 23:15:03,446 ERROR [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Error en tarea periódica: Error al obtener movimientos: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:20:00,006 INFO  [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Ejecutando tarea periódica para obtener movimientos de Pokemon
+2025-07-10 23:20:00,008 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [ENTRADA] PokemonService_Subclass.getMoves() - Parámetros: [retry, true] - Timestamp: 2025-07-10T23:20:00.007958600
+2025-07-10 23:20:02,845 ERROR [com.ban.aus.ser.PokemonService] (vert.x-worker-thread-5) Error retrieving moves with retry strategy: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:20:02,846 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [SALIDA] PokemonService_Subclass.getMoves() - Resultado: com.banco.austro.service.ServiceResult@3b11eb17 - Tiempo: 2839ms - Timestamp: 2025-07-10T23:20:02.846581800
+2025-07-10 23:20:02,846 ERROR [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Error en tarea periódica: Error al obtener movimientos: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:25:00,003 INFO  [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Ejecutando tarea periódica para obtener movimientos de Pokemon
+2025-07-10 23:25:00,005 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [ENTRADA] PokemonService_Subclass.getMoves() - Parámetros: [retry, true] - Timestamp: 2025-07-10T23:25:00.005757200
+2025-07-10 23:25:03,021 ERROR [com.ban.aus.ser.PokemonService] (vert.x-worker-thread-5) Error retrieving moves with retry strategy: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:25:03,021 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [SALIDA] PokemonService_Subclass.getMoves() - Resultado: com.banco.austro.service.ServiceResult@2848d312 - Tiempo: 3016ms - Timestamp: 2025-07-10T23:25:03.021623300
+2025-07-10 23:25:03,022 ERROR [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Error en tarea periódica: Error al obtener movimientos: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:30:00,012 INFO  [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Ejecutando tarea periódica para obtener movimientos de Pokemon
+2025-07-10 23:30:00,014 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [ENTRADA] PokemonService_Subclass.getMoves() - Parámetros: [retry, true] - Timestamp: 2025-07-10T23:30:00.014899800
+2025-07-10 23:30:03,096 ERROR [com.ban.aus.ser.PokemonService] (vert.x-worker-thread-5) Error retrieving moves with retry strategy: java.net.UnknownHostException: pokeapi.coj
+2025-07-10 23:30:03,097 INFO  [com.ban.aus.int.LoggingInterceptor] (vert.x-worker-thread-5) [SALIDA] PokemonService_Subclass.getMoves() - Resultado: com.banco.austro.service.ServiceResult@33ecadaf - Tiempo: 3082ms - Timestamp: 2025-07-10T23:30:03.097595300
+2025-07-10 23:30:03,097 ERROR [com.ban.aus.sch.PokemonScheduler] (vert.x-worker-thread-5) Error en tarea periódica: Error al obtener movimientos: java.net.UnknownHostException: pokeapi.coj
